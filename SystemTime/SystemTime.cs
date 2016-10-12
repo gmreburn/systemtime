@@ -10,7 +10,7 @@
         /// <summary>
         /// Get or Set the DateTime object. Setting Now to null will cause the default DateTime object implementation to be used.
         /// </summary>
-        public static DateTime Now
+        public static DateTime? Now
         {
             get { return now ?? DateTime.Now; }
             set { now = value; }

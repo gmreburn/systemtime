@@ -4,3 +4,5 @@
 
 /obj/Debug
 /SystemTime/obj/Debug
+/SystemTime.Tests/obj/Debug
+/SystemTime.Tests/bin/Debug
