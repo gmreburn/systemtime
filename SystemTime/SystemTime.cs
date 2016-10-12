@@ -4,25 +4,25 @@
 
     public static class SystemTime
     {
-        /// <summary> Normally this is a pass-through to DateTime.Now, but it can be overridden with SetDateTime( .. ) for testing or debugging.
-        /// </summary>
-        public static Func<DateTime> Now = () => DateTime.Now;
-        public static Func<DateTime> UtcNow = () => DateTime.UtcNow;
+        private static DateTime? utcNow;
+        private static DateTime? now;
 
-        /// <summary> Set time to return when SystemTime.Now() is called.
+        /// <summary>
+        /// Get or Set the DateTime object. Setting Now to null will cause the default DateTime object implementation to be used.
         /// </summary>
-        public static void SetDateTime(DateTime dateTime)
+        public static DateTime Now
         {
-            Now = () => dateTime;
-            UtcNow = () => dateTime;
+            get { return now ?? DateTime.Now; }
+            set { now = value; }
         }
 
-        /// <summary> Resets SystemTime.Now() to return DateTime.Now.
+        /// <summary>
+        /// Get or Set the datetime object. Setting UtcNow to null will cause the default DateTime object implementation to be used.
         /// </summary>
-        public static void ResetDateTime()
+        public static DateTime UtcNow
         {
-            Now = () => DateTime.Now;
-            UtcNow = () => DateTime.UtcNow;
+            get { return utcNow ?? DateTime.Now; }
+            set { utcNow = value; }
         }
     }
 }

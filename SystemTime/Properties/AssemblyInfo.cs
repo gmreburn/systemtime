@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("gmreburn.SystemTime")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Abstraction for DateTime so it is testable")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Gregory Reburn")]
 [assembly: AssemblyProduct("SystemTime")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
