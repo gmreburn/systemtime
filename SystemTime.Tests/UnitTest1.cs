@@ -19,6 +19,17 @@
         }
 
         [TestMethod]
+        public void NowHasSameToString()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+            Assert.AreEqual(SystemTime.Now.ToString(), DateTime.Now.ToString());
+        }
+
+        [TestMethod]
         public void NowIsSettable()
         {
             // Arrange
@@ -53,6 +64,17 @@
 
             // Assert
             Assert.IsNotNull(SystemTime.UtcNow);
+        }
+
+        [TestMethod]
+        public void UtcNowHasSameToString()
+        {
+            // Arrange
+
+            // Act
+
+            // Assert
+            Assert.AreEqual(SystemTime.UtcNow, DateTime.UtcNow);
         }
 
         [TestMethod]
