@@ -1,12 +1,12 @@
 version: 1.0.{build}
 configuration:
-- Net20
-- Net40
-- Net45
-- Net451
-- Net452
-- Net46
 - Net461
+- Net46
+- Net452
+- Net451
+- Net45
+- Net40
+- Net20
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
