@@ -29,7 +29,7 @@ Assert.IsTrue(result);
 You can set SystemTime.Now to any DateTime instance
 
 ```C#
-SystemTime.Now = new System.DateTime(1, 1, 2016);
-SystemTime.Now = DateTime.Now; // Will cache the current time and always return that particular time
+SystemTime.Now = new System.DateTime(1, 1, 2016); // 01/01/2016
+SystemTime.Now = DateTime.Now; // Will cache the current time at runtime and always return that particular time
 SystemTime.Now = null; // Reset the mock to default behavior (return current time)
 ```
