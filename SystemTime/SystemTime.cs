@@ -21,7 +21,7 @@
         /// </summary>
         public static DateTime UtcNow
         {
-            get { return utcNow ?? DateTime.Now; }
+            get { return utcNow ?? DateTime.UtcNow; }
             set { utcNow = value; }
         }
     }
