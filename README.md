@@ -2,6 +2,9 @@
 
 .Net Abstraction for DateTime so it is testable. Project uses CI/CD. All changes welcomed via pull requests.
 
+# .Net Framework Target
+This release currently only supports .Net 2.0. I am working to provide assemblies for .Net 4.0, 4.5, 4.5.2, 4.6, and 4.6.1.
+
 ## Usage
 Defaults to ```System.DateTime implementation```. Get or set SystemTime.Now or SystemTime.UtcNow to mock the behavior.
 ```C#
