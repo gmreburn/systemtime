@@ -1,12 +1,4 @@
 version: 1.0.{build}
-configuration:
-- Net461
-- Net46
-- Net452
-- Net451
-- Net45
-- Net40
-- Net20
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -16,8 +8,28 @@ assembly_info:
 nuget:
   account_feed: true
   project_feed: true
-build:
-  publish_nuget: true
-  include_nuget_references: true
-  parallel: true
-  verbosity: minimal
+build_script:
+- cmd: >-
+    msbuild /Property:Configuration=net20 /m
+
+    msbuild /Property:Configuration=net40 /m
+
+    msbuild /Property:Configuration=net45 /m
+
+    msbuild /Property:Configuration=net452 /m
+
+    msbuild /Property:Configuration=net451 /m
+
+    msbuild /Property:Configuration=net46 /m
+
+    msbuild /Property:Configuration=net461 /m
+
+    NuGet pack SystemTime/SystemTime.csproj -NonInteractive
+artifacts:
+- path: '**\*.nupkg'
+  name: systemtime.nupkg
+deploy:
+- provider: Environment
+  name: nuget.org
+  on:
+    branch: master
