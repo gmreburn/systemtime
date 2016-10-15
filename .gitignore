@@ -3,6 +3,6 @@
 ################################################################################
 
 /obj/Debug
-/SystemTime/obj/Debug
-/SystemTime.Tests/obj/Debug
+/SystemTime/obj
+/SystemTime.Tests/obj
 /SystemTime.Tests/bin/Debug
