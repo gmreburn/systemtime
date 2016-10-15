@@ -1,4 +1,4 @@
-﻿namespace gmreburn
+﻿namespace NutsAndBrackets
 {
     using System;
 

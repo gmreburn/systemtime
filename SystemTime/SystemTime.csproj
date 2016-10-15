@@ -7,8 +7,8 @@
     <ProjectGuid>{C8A18BB7-38C3-4650-9D2C-24144EF4655E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>gmreburn</RootNamespace>
-    <AssemblyName>SystemTime</AssemblyName>
+    <RootNamespace>NutsAndBrackets</RootNamespace>
+    <AssemblyName>NutsAndBrackets.SystemTime</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

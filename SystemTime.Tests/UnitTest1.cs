@@ -1,4 +1,4 @@
-﻿namespace gmreburn.Tests
+﻿namespace NutsAndBrackets.Tests
 {
     using System;
     using System.Threading;

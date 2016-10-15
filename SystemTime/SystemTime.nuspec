@@ -8,6 +8,7 @@
     <owners>$author$</owners>
     <licenseUrl>https://github.com/gmreburn/systemtime/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/gmreburn/systemtime</projectUrl>
+    <iconUrl>https://github.com/gmreburn/systemtime/blob/master/systemtime.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
