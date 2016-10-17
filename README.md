@@ -6,7 +6,8 @@
 Compiled support for .Net 2.0, 4.0, 4.5, 4.5.1 4.5.2, 4.6, and 4.6.1.
 
 ## Installation
-``` PM > Install-Package NutsAndBrackets.SystemTime
+Hosted on [Nuget.org](https://www.nuget.org/packages/NutsAndBrackets.SystemTime)
+``` PM > Install-Package NutsAndBrackets.SystemTime ```
 
 ## Usage
 Defaults to ```System.DateTime implementation```. Get or set SystemTime.Now or SystemTime.UtcNow to mock the behavior.
