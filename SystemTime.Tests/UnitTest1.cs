@@ -74,7 +74,7 @@
             // Act
 
             // Assert
-            Assert.AreEqual(SystemTime.UtcNow, DateTime.UtcNow);
+            Assert.AreEqual(SystemTime.UtcNow.ToString(), DateTime.UtcNow.ToString());
         }
 
         [TestMethod]
